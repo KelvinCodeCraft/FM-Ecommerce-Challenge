@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #f7f8fd;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo h1{
+    font-size: 30px;
+}
+
+.header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+    font-size: 16px;
+}
+
+.header .profile {
+    display: flex;
+    align-items: center;
+}
+
+.header .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 600px){
+.logo svg{
+    display: none;
+}
+}
+@media screen and (max-width: 600px){
+    nav{
+        display: none;
+    }
+    .profile img{
+        display: none;
+    }
+    .logo h1{
+        display: none;
+    }
+    
+    .logo h1{
+        font-size: 20px;
+    }
+    .logo svg{
+        font-size: 20px
+    }
+    .full-edition{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .full-edition {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 300px;
+    }
+    .full-edition-images{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .header nav {
+        display: none;
+    }
+
+    .header .logo h1 {
+        font-size: 20px;
+    }
+
+    .full-edition {
+        padding: 10px;
+    }
+
+    .full-edition-images {
+        gap: 5px;
+    }
+
+    .add-to-cart button {
+        width: 100%;
+    }
+}
+
+
+/* @media (min-width: 768px) {
+    .full-edition {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .product-details {
+      max-width: 400px;
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .header nav {
+      display: none;
+    }
+
+    .header .logo h1 {
+      font-size: 18px;
+    }
+
+    .header .profile img {
+      display: none;
+    }
+
+    .product-images img {
+      max-width: 100%;
+    }
+} */
+
+.full-edition {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.product-images {
+    text-align: center;
+    align-items: center;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+
+.full-edition-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    padding-left: 100px;
+    width: 400px;
+}
+
+.full-edition-images img {
+    width: 78px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.full-edition-images img.active {
+    border-color: hsl(26, 100%, 55%);
+}
+
+.product-details {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+}
+
+.product-details h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.product-details h2{
+    font-size: 17px;
+    color: hsl(219, 9%, 45%);
+}
+
+.product-details p {
+    color: hsl(219, 9%, 45%);
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price span {
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    margin-left: 10px;
+    background-color: black;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.quantity span {
+    font-size: 18px;
+}
+
+.add-to-cart button {
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart button:hover {
+    background-color: hsl(26, 100%, 55%);
+}

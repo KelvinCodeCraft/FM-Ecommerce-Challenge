@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
+        <h1>Sneakers</h1> 
+      </div>
+      <nav>
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+      </nav>
+      <div class="profile">
+        <img src="./images/icon-cart.svg" >
+        <img src="./images/image-avatar.png">
+      </div>
+    </header>
+  
+    <div class="full-edition">
+      <div class="product-images">
+          <img src="./images/image-product-1.jpg">
+          <div class="full-edition-images">
+              <img src="./images/image-product-2.jpg" class="active">
+              <img src="./images/image-product-3.jpg">
+              <img src="./images/image-product-4.jpg">
+              <img src="./images/image-product-4-thumbnail.jpg">
+          </div>
+      </div>
+  
+      <div class="product-details">
+          <h2>SNEAKER COMPANY</h2>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+          <div class="price">
+              $125.00 <span>50%</span>
+          </div>
+          <div class="add-to-cart">
+              <div class="quantity">
+                  <button>-</button>
+                  <span>0</span>
+                  <button>+</button>
+              </div>
+              <button>Add to cart</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
