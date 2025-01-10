@@ -85,27 +85,7 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
-    .header nav {
-        display: none;
-    }
 
-    .header .logo h1 {
-        font-size: 20px;
-    }
-
-    .full-edition {
-        padding: 10px;
-    }
-
-    .full-edition-images {
-        gap: 5px;
-    }
-
-    .add-to-cart button {
-        width: 100%;
-    }
-}
 
 
 /* @media (min-width: 768px) {
